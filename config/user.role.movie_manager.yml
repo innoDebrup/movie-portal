@@ -1,0 +1,31 @@
+uuid: 9c58ddb2-c17b-416d-b024-819cffb774e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.lists
+    - node.type.movies
+  module:
+    - admin_toolbar_search
+    - node
+    - toolbar
+id: movie_manager
+label: 'Movie Manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'create lists content'
+  - 'create movies content'
+  - 'delete lists revisions'
+  - 'delete movies revisions'
+  - 'delete own lists content'
+  - 'delete own movies content'
+  - 'edit own lists content'
+  - 'edit own movies content'
+  - 'revert lists revisions'
+  - 'revert movies revisions'
+  - 'use admin toolbar search'
+  - 'view lists revisions'
+  - 'view movies revisions'

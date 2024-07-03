@@ -1,0 +1,19 @@
+uuid: fbcec618-fb11-42c8-9ac6-d81c426f81e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.global_page
+  module:
+    - user
+id: node.global_page.default
+targetEntityType: node
+bundle: global_page
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

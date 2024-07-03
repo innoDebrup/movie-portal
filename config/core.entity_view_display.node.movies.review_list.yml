@@ -1,0 +1,97 @@
+uuid: 0df6ac8a-bd0d-4a72-a610-d1afd88e9c3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.review_list
+    - field.field.node.movies.body
+    - field.field.node.movies.field_genre
+    - field.field.node.movies.field_poster
+    - field.field.node.movies.field_release_date
+    - node.type.movies
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'main part'
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          dabcd7b3-e56a-4109-987b-2de38870f372:
+            uuid: dabcd7b3-e56a-4109-987b-2de38870f372
+            region: first
+            configuration:
+              id: 'field_block:node:movies:field_poster'
+              label: poster
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          c28fd129-e19e-4ef2-be76-4ad13d51faa1:
+            uuid: c28fd129-e19e-4ef2-be76-4ad13d51faa1
+            region: second
+            configuration:
+              id: 'field_block:node:movies:body'
+              label: Plot
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.movies.review_list
+targetEntityType: node
+bundle: movies
+mode: review_list
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_poster:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_genre: true
+  field_release_date: true

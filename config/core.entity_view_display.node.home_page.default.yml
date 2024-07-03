@@ -1,0 +1,74 @@
+uuid: 942c60cc-17b8-4c05-a73d-3894ab7feb50
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home_page
+    - views.view.latest_lists
+    - views.view.latests_reviews
+  module:
+    - layout_builder
+    - quicktabs
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: Content
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          6a8b7c78-0ed7-496c-90c8-8f38e385d314:
+            uuid: 6a8b7c78-0ed7-496c-90c8-8f38e385d314
+            region: first
+            configuration:
+              id: 'views_block:latest_lists-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          74f4edec-8c89-4dcc-aba2-825342526d04:
+            uuid: 74f4edec-8c89-4dcc-aba2-825342526d04
+            region: second
+            configuration:
+              id: 'views_block:latests_reviews-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          c529fedb-4123-4074-b540-d4c450912cab:
+            uuid: c529fedb-4123-4074-b540-d4c450912cab
+            region: first
+            configuration:
+              id: 'quicktabs_block:news_tabs'
+              label: News
+              label_display: '0'
+              provider: quicktabs
+              context_mapping: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.home_page.default
+targetEntityType: node
+bundle: home_page
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: en
+uuid: 543cebf5-f40c-4e10-86ee-759f5d94e416
+name: 'Movie Station'
+mail: dptest.life@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/15
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

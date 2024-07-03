@@ -1,0 +1,37 @@
+uuid: eda8644c-96ff-4ad0-80b1-7c9357cd48d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.review.body
+    - field.field.node.review.field_movie
+    - node.type.review
+  module:
+    - text
+    - user
+id: node.review.default
+targetEntityType: node
+bundle: review
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_movie:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
