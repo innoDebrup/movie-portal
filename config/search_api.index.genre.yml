@@ -1,0 +1,105 @@
+uuid: efdd1906-9e9f-4208-9b93-dd8d37051476
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.server.database
+  module:
+    - taxonomy
+    - search_api
+id: genre
+name: Genre
+description: ''
+read_only: false
+field_settings:
+  name:
+    label: Name
+    datasource_id: 'entity:taxonomy_term'
+    property_path: name
+    type: text
+    dependencies:
+      module:
+        - taxonomy
+datasource_settings:
+  'entity:taxonomy_term':
+    bundles:
+      default: false
+      selected:
+        - genre
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  ignorecase:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: true
+    fields:
+      - name
+  language_with_fallback: {  }
+  rendered_item: {  }
+  stopwords:
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
+    all_fields: false
+    fields: {  }
+    stopwords:
+      - a
+      - an
+      - and
+      - are
+      - as
+      - at
+      - be
+      - but
+      - by
+      - for
+      - if
+      - in
+      - into
+      - is
+      - it
+      - 'no'
+      - not
+      - of
+      - 'on'
+      - or
+      - s
+      - such
+      - t
+      - that
+      - the
+      - their
+      - then
+      - there
+      - these
+      - they
+      - this
+      - to
+      - was
+      - will
+      - with
+  tokenizer:
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+    all_fields: false
+    fields: {  }
+    spaces: ''
+    ignored: ._-
+    overlap_cjk: 1
+    minimum_word_size: '3'
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: database

@@ -1,0 +1,24 @@
+uuid: 9cfb180b-b9cd-474b-a1f9-245134feec4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+  module:
+    - admin_toolbar_search
+    - node
+    - toolbar
+id: news_manager
+label: 'News Manager'
+weight: 5
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'create news content'
+  - 'delete news revisions'
+  - 'delete own news content'
+  - 'edit own news content'
+  - 'revert news revisions'
+  - 'use admin toolbar search'
+  - 'view news revisions'

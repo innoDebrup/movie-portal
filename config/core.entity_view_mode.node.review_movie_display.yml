@@ -1,0 +1,11 @@
+uuid: 1936edf0-c475-4ffd-9f03-80df2626417c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.review_movie_display
+label: 'Review Movie Display'
+description: ''
+targetEntityType: node
+cache: true

@@ -1,0 +1,11 @@
+uuid: 79a7ce9c-1bf3-4d01-910e-e1bf355539e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.review_list
+label: 'Review List'
+description: 'For Review Index'
+targetEntityType: node
+cache: true

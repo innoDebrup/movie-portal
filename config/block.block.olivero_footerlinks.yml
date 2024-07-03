@@ -1,0 +1,25 @@
+uuid: 07180695-057b-463f-97be-8fbea8d8aca9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-links
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_footerlinks
+theme: olivero
+region: footer_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-links'
+settings:
+  id: 'system_menu_block:footer-links'
+  label: 'Footer Links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

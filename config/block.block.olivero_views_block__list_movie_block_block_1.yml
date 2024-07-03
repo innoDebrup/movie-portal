@@ -1,0 +1,30 @@
+uuid: 3738fa95-fb8b-4d07-ba82-1e00fed35c1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.list_movie_block
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__list_movie_block_block_1
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:list_movie_block-block_1'
+settings:
+  id: 'views_block:list_movie_block-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/list-view/*'

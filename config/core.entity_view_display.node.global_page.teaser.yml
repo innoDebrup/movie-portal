@@ -1,0 +1,20 @@
+uuid: 6ccb79c0-ed69-42ae-95a5-2292c0071451
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.global_page
+  module:
+    - user
+id: node.global_page.teaser
+targetEntityType: node
+bundle: global_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
